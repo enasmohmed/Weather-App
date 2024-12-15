@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- =========== START CORE FONT ============= -->
+    <!-- ===== favicon ===== -->
+    <!-- <link rel="icon" href="./images/bookmark.png" /> -->
+    <!-- =========== END CORE FONT ============= -->
+
+    <!-- ========== START FONTAWESOMS LIBRAIRY ========= -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- ========== END FONTAWESOMS LIBRAIRY ========= -->
+
+    <!-- ========= START BOOTSTRAP CSS ========= -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- ========= END BOOTSTRAP CSS ========= -->
+
+    <!-- ========== START MAIN CSS ========= -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- ========== END MAIN CSS ========= -->
+</head>
+
+<body>
+
+
+    <!--& ========== Start Navbar =========== -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex justify-content-center align-items-center" href="index.html">
+                    <div class="logo-img me-3">
+                        <img src="./img/logo@2x.png" alt="" class="img-fluid" />
+                    </div>
+                    <div class="logo-body d-flex justify-content-center align-items-start flex-column">
+                        <h1 class="m-0 text-white">Weather</h1>
+                        <small class="text-white">tagline goes here</small>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
+                        <li class="nav-item text-white">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Live Cameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--& ========== End Navbar =========== -->
+
+    <!--& ========== Start Forecast =========== -->
+
+    
+    <div class="forecast">
+        <div class="container">
+            <form action="" class="location-search">
+                <input type="text" id="city-input" placeholder="Find your location ..." />
+                <input type="button" id="searchBtn" value="Find" />
+                <p id="errorMessage" class="text-warning p-3 d-none position-absolute">
+                    Please enter a real location ..
+                </p>
+            </form>
+            <div class="weather-body">
+                <div class="row">
+                    <div class="col-md-4 p-0">
+                        <div id="todayWeatherCard"></div>
+
+                    
+                    </div>
+                    <div class="col-md-4 p-0">
+                        <div id="tomorrowWeatherCard"></div>
+
+                        
+                    </div>
+                    <div class="col-md-4 p-0">
+                        <div id="dayAfterTomorrowWeatherCard"></div>
+
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--& ========== End Forecast =========== -->
+
+
+    <!--& ========== Start Footer =========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <form action="" class="send-email">
+                        <input type="text" name="" id="search" placeholder="Enter your email to subscribe..." />
+                        <input type="button" value="Subscribe" />
+                        <p id="errorMessage" class="text-warning p-3 d-none position-absolute">
+                            Please enter a real location ..
+                        </p>
+                    </form>
+                    <p class="text-start mt-3">Copyright &copy; 2024 Weather App. All rights reserved.</p>
+                </div>
+                <div class="col-md-5">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--& ========== End Footer =========== -->
+
+
+
+
+    <!-- ========= Start BOOTSTRAP JS ========== -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- ========= END BOOTSTRAP JS ========== -->
+
+    <!-- ======== Start MAIN JS ========= -->
+    <script src="./js/main.js"></script>
+    <!-- ======== End MAIN JS ========= -->
+
+</body>
+
+</html>
